@@ -9,6 +9,9 @@ A personal dashboard to track WeChat Official Accounts and generate daily AI sum
 - **Smart Filtering**: Filter articles by keywords to focus on your research interests using Google Gemini.
 - **Local Data**: Accounts are stored in a local SQLite database (`app.db`).
 
+## Example
+![image](https://github.com/Dylan1021/WeScholarly/blob/main/example.png)
+
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) (Version 18 or higher recommended)
