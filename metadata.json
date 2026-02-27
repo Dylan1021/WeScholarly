@@ -1,0 +1,5 @@
+{
+  "name": "WeScholarly",
+  "description": "Track WeChat Official Accounts and summarize academic articles using Gemini AI.",
+  "requestFramePermissions": []
+}
