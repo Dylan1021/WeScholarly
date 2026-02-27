@@ -6,14 +6,21 @@ A personal dashboard to track WeChat Official Accounts and generate daily AI sum
 
 - **Track Accounts**: Search and add WeChat Official Accounts.
 - **Daily Briefing**: One-click generation of yesterday's article summaries.
-- **AI Powered**: Uses Google Gemini 2.5 Flash for high-quality summarization.
-- **Smart Filtering**: Filter articles by keywords to focus on your research interests.
+- **Smart Filtering**: Filter articles by keywords to focus on your research interests using Google Gemini.
 - **Local Data**: Accounts are stored in a local SQLite database (`app.db`).
 
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) (Version 18 or higher recommended)
 - npm (comes with Node.js)
+
+## Configuration
+
+The app comes pre-configured with default API keys in `src/App.tsx`.
+- **MPText Key**: Used to fetch WeChat articles from [wechat-article-exporter](https://down.mptext.top/dashboard/api)
+- **Gemini Key**: Used for AI summarization.
+
+You can change these in the "Settings" tab of the application, or modify `src/App.tsx` directly if you want to change the defaults permanently.
 
 ## Installation
 
@@ -43,15 +50,9 @@ npm start
 ```
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Configuration
-
-The app comes pre-configured with default API keys in `src/App.tsx`.
-- **MPText Key**: Used to fetch WeChat articles.
-- **Gemini Key**: Used for AI summarization.
-
-You can change these in the "Settings" tab of the application, or modify `src/App.tsx` directly if you want to change the defaults permanently.
-
 ## Troubleshooting
 
 - **Database Issues**: If you encounter issues with `better-sqlite3`, you might need to rebuild it: `npm rebuild better-sqlite3`.
 - **Port In Use**: If port 3000 is busy, modify `PORT` in `server.ts`.
+
+Hope you enjoy it!
